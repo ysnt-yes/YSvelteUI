@@ -1,0 +1,32 @@
+:root {
+  --color-background: #fff;
+  --color-text: light-dark(#000, #fff);
+  --color-text-muted: light-dark(#555, #ccc);
+  --color-brand: oklch(53.046% 0.29324 293.942);
+  --color-success: green;
+  --color-warning: yellow;
+  --color-error: red;
+  --neutral-050: oklch(95% 0 0);
+  --neutral-100: oklch(90% 0 0);
+  --neutral-200: oklch(80% 0 0);
+  --neutral-300: oklch(70% 0 0);
+  --neutral-400: oklch(60% 0 0);
+  --neutral-500: oklch(50% 0 0);
+  --neutral-600: oklch(40% 0 0);
+  --neutral-700: oklch(30% 0 0);
+  --neutral-800: oklch(20% 0 0);
+  --neutral-900: oklch(10% 0 0);
+  --neutral-950: oklch(5% 0 0);
+  --tint-amount: 8%;
+  --neutral-050-tint: color-mix(in srgb, var(--neutral-050), var(--color-brand) var(--tint-amount));
+  --neutral-100-tint: color-mix(in srgb, var(--neutral-100), var(--color-brand) var(--tint-amount));
+  --neutral-200-tint: color-mix(in srgb, var(--neutral-200), var(--color-brand) var(--tint-amount));
+  --neutral-300-tint: color-mix(in srgb, var(--neutral-300), var(--color-brand) var(--tint-amount));
+  --neutral-400-tint: color-mix(in srgb, var(--neutral-400), var(--color-brand) var(--tint-amount));
+  --neutral-500-tint: color-mix(in srgb, var(--neutral-500), var(--color-brand) var(--tint-amount));
+  --neutral-600-tint: color-mix(in srgb, var(--neutral-600), var(--color-brand) var(--tint-amount));
+  --neutral-700-tint: color-mix(in srgb, var(--neutral-700), var(--color-brand) var(--tint-amount));
+  --neutral-800-tint: color-mix(in srgb, var(--neutral-800), var(--color-brand) var(--tint-amount));
+  --neutral-900-tint: color-mix(in srgb, var(--neutral-900), var(--color-brand) var(--tint-amount));
+  --neutral-950-tint: color-mix(in srgb, var(--neutral-950), var(--color-brand) var(--tint-amount));
+}
