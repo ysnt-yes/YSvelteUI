@@ -112,27 +112,27 @@
 	}
 
 	.btn[data-color='accent'] {
-		--_btn-bg: var(--color-brand);
-		--_btn-border: var(--color-brand);
-		--_btn-color: var(--color-text);
+		--_btn-bg: light-dark(var(--color-brand-100), var(--color-brand-800));
+		--_btn-border: light-dark(var(--color-brand-200), var(--color-brand-700));
+		--_btn-color: var(--brand-500);
 	}
 
 	.btn[data-color='success'] {
-		--_btn-bg: var(--color-success);
-		--_btn-border: var(--color-success);
-		--_btn-color: var(--color-success);
-	}
+      --_btn-bg: light-dark(var(--color-success-100), var(--color-success-800));
+      --_btn-border: light-dark(var(--color-success-200), var(--color-success-700));
+      --_btn-color: var(--success-500);
+  }
 
 	.btn[data-color='warning'] {
-		--_btn-bg: var(--color-warning);
-		--_btn-border: var(--color-warning);
-		--_btn-color: var(--color-warning);
+      --_btn-bg: light-dark(var(--color-warning-100), var(--color-warning-800));
+      --_btn-border: light-dark(var(--color-warning-200), var(--color-warning-700));
+      --_btn-color: var(--warning-500);
 	}
 
 	.btn[data-color='error'] {
-		--_btn-bg: var(--color-error);
-		--_btn-border: var(--color-error);
-		--_btn-color: var(--color-error);
+      --_btn-bg: light-dark(var(--color-error-100), var(--color-error-800));
+      --_btn-border: light-dark(var(--color-error-200), var(--color-error-700));
+      --_btn-color: var(--error-500);
 	}
 
 	.btn[data-color='custom'] {
@@ -196,7 +196,7 @@
 
 	.btn[data-variant='glass'] {
 		backdrop-filter: blur(10px);
-		background: color-mix(in srgb, var(--_btn-bg) 30%, transparent);
+		background: color-mix(in srgb, var(--_btn-bg) 60%, transparent);
 		--_btn-border: transparent;
 	}
 

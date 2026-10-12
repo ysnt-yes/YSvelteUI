@@ -2,10 +2,60 @@
   --color-background: #fff;
   --color-text: light-dark(#000, #fff);
   --color-text-muted: light-dark(#555, #ccc);
-  --color-brand: oklch(53.046% 0.29324 293.942);
-  --color-success: green;
-  --color-warning: yellow;
-  --color-error: red;
+
+  --color-brand:   oklch(53.046% 0.29324 293.942);
+  --color-success: oklch(62.000% 0.18000 145.000);
+  --color-warning: oklch(78.000% 0.17000  80.000);
+  --color-error:   oklch(57.000% 0.22000  25.000);
+
+  --color-brand-50:  oklch(from var(--color-brand) 97.0% 0.03 h);
+  --color-brand-100: oklch(from var(--color-brand) 92.0% 0.07 h);
+  --color-brand-200: oklch(from var(--color-brand) 84.0% 0.15 h);
+  --color-brand-300: oklch(from var(--color-brand) 74.0% 0.22 h);
+  --color-brand-400: oklch(from var(--color-brand) 63.0% 0.27 h);
+  --color-brand-500: var(--color-brand);
+  --color-brand-600: oklch(from var(--color-brand) 44.0% 0.26 h);
+  --color-brand-700: oklch(from var(--color-brand) 35.0% 0.21 h);
+  --color-brand-800: oklch(from var(--color-brand) 27.0% 0.16 h);
+  --color-brand-900: oklch(from var(--color-brand) 19.0% 0.10 h);
+  --color-brand-950: oklch(from var(--color-brand) 13.0% 0.06 h);
+
+  --color-success-50:  oklch(from var(--color-success) 97.0% 0.03 h);
+  --color-success-100: oklch(from var(--color-success) 92.0% 0.06 h);
+  --color-success-200: oklch(from var(--color-success) 85.0% 0.11 h);
+  --color-success-300: oklch(from var(--color-success) 77.0% 0.15 h);
+  --color-success-400: oklch(from var(--color-success) 69.0% 0.18 h);
+  --color-success-500: var(--color-success);
+  --color-success-600: oklch(from var(--color-success) 54.0% 0.17 h);
+  --color-success-700: oklch(from var(--color-success) 45.0% 0.14 h);
+  --color-success-800: oklch(from var(--color-success) 37.0% 0.11 h);
+  --color-success-900: oklch(from var(--color-success) 29.0% 0.08 h);
+  --color-success-950: oklch(from var(--color-success) 20.0% 0.05 h);
+
+  --color-warning-50:  oklch(from var(--color-warning) 97.5% 0.02 h);
+  --color-warning-100: oklch(from var(--color-warning) 94.0% 0.05 h);
+  --color-warning-200: oklch(from var(--color-warning) 89.0% 0.09 h);
+  --color-warning-300: oklch(from var(--color-warning) 84.0% 0.13 h);
+  --color-warning-400: oklch(from var(--color-warning) 79.0% 0.16 h);
+  --color-warning-500: var(--color-warning);
+  --color-warning-600: oklch(from var(--color-warning) 66.0% 0.16 h);
+  --color-warning-700: oklch(from var(--color-warning) 54.0% 0.14 h);
+  --color-warning-800: oklch(from var(--color-warning) 43.0% 0.12 h);
+  --color-warning-900: oklch(from var(--color-warning) 32.0% 0.09 h);
+  --color-warning-950: oklch(from var(--color-warning) 21.0% 0.06 h);
+
+  --color-error-50:  oklch(from var(--color-error) 97.0% 0.02 h);
+  --color-error-100: oklch(from var(--color-error) 92.0% 0.05 h);
+  --color-error-200: oklch(from var(--color-error) 84.0% 0.11 h);
+  --color-error-300: oklch(from var(--color-error) 75.0% 0.17 h);
+  --color-error-400: oklch(from var(--color-error) 65.0% 0.21 h);
+  --color-error-500: var(--color-error);
+  --color-error-600: oklch(from var(--color-error) 49.0% 0.20 h);
+  --color-error-700: oklch(from var(--color-error) 41.0% 0.17 h);
+  --color-error-800: oklch(from var(--color-error) 33.0% 0.14 h);
+  --color-error-900: oklch(from var(--color-error) 25.0% 0.10 h);
+  --color-error-950: oklch(from var(--color-error) 17.0% 0.06 h);
+
   --neutral-050: oklch(95% 0 0);
   --neutral-100: oklch(90% 0 0);
   --neutral-200: oklch(80% 0 0);
@@ -17,6 +67,7 @@
   --neutral-800: oklch(20% 0 0);
   --neutral-900: oklch(10% 0 0);
   --neutral-950: oklch(5% 0 0);
+
   --tint-amount: 8%;
   --neutral-050-tint: color-mix(in srgb, var(--neutral-050), var(--color-brand) var(--tint-amount));
   --neutral-100-tint: color-mix(in srgb, var(--neutral-100), var(--color-brand) var(--tint-amount));
