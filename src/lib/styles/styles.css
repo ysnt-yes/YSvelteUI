@@ -1,5 +1,6 @@
-@import './colors.css';
-@import './variables.css';
+@import 'variables/colors.css';
+@import 'variables/spacing.css';
+@import 'theme/color.css';
 
 :root,
 :root[data-theme="system"] {

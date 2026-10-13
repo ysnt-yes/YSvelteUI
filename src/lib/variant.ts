@@ -8,24 +8,25 @@ export interface BaseVisuals {
   variant?: DesignSystemVariant;
   color?: DesignSystemColor;
   customColor?: string;
+	fullWidth?: boolean;
 }
 
 export interface ButtonVisuals extends BaseVisuals {
-  
   align?: DesignSystemAlign;
-  fullWidth?: boolean;
   active?: boolean;
 }
 
 export interface CardVisuals extends BaseVisuals {
   elevation?: 'none' | 'low' | 'high';
-  fullWidth?: boolean;
 }
+
+export type InputVisuals = BaseVisuals
 
 export interface DesignSystemAttributes {
   button: ButtonVisuals;
   a: ButtonVisuals;
   div: CardVisuals;
+	input: InputVisuals;
 }
 
 export type VariantProps<T extends keyof SvelteHTMLElements> =
